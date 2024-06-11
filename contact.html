@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <title>Contact Form</title>
+</head>
+
+<body> 
+   <center>
+<section class="form">  
+
+<fieldset>
+        <h1 id="form">Contact</h1>
+        <form action="#">
+            <p class="form-tittle">Submit the form below or write me an email </p><br>
+            <p id="formErr"></p><p id="formOK"></p>
+            <section>
+                <label for=""> Name</label><br>
+            </section>
+            <section>
+                <input type="text" id="idName" placeholder="" size="64"><br><br>
+                <section>
+                    <section>
+                        <label for="email">Email</label><br>
+                    </section>
+                    <section>
+                        <input type="text" id="idEmail" name="email" size="64"><br><br>
+                    </section>
+                    <section>
+                        <label for="text">Message </label><br>
+                      </section>
+                    <section>
+                        <input type="text" id="idMessage" >
+                    </section>
+                    <br>
+                    <button  id="sendEmailButton" value="button">Submit</button>
+        </form>
+    </fieldset>
+</section>
+</center> 
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

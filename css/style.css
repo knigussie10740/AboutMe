@@ -1,0 +1,848 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*  The homepage code*/
+
+:root {
+  --primary-color: #a855f7;
+  --primary-color-dark: #9333ea;
+  --secondary-color: #ca8a04;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --extra-light: #faf5ff;
+  --max-width: 1200px;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(10 25 47);
+
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(10 25 47);
+  z-index: 99;
+}
+
+.nav__content {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #f1f1f1;
+  transition: 0.3s;
+}
+
+nav .logo a:hover {
+  color: #f1f1f1;
+}
+
+nav .checkbox {
+  display: none;
+}
+
+nav input {
+  display: none;
+}
+
+nav .checkbox i {
+  font-size: 2rem;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  transition: left 0.3s;
+}
+
+ul li a {
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: #f1f1f1;
+  transition: 0.3s;
+}
+
+ul li a:hover {
+  border-top-color: white;
+  border-bottom-color: white;
+  color: goldenrod;
+  font-weight: bold;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 38%;
+  height: 320px;
+  width: 60%;
+  margin-left: 10px;
+  box-shadow: 0 0 100px white;
+}
+
+.content .subtitle {
+  height: 45px;
+  width: 80%;
+  font-size: 24px;
+  padding: 15px;
+  line-height: 1rem;
+  text-align: center;
+  color: white;
+  margin-left: 10px;
+}
+
+.content .title {
+  height: 54px;
+  width: 80%;
+  margin-top: 5px;
+  margin-left: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 20px;
+  color: #faf5ff;
+  line-height: 1.4rem;
+  font-weight: bold;
+}
+
+.description {
+  height: 186px;
+  margin-left: 10px;
+  width: 85%;
+  font-size: 18px;
+  color: #faf5ff;
+  margin-top: 5px;
+  padding-left: 15px;
+  font-weight: bold;
+  box-shadow: 0 0 100px white;
+
+}
+
+.image-box img {
+  position: absolute;
+  height: 160px;
+  width: 160px;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  top: 13%;
+  left: 39%;
+  border-radius: 95px;
+}
+
+
+.imageh {
+  height: 160px;
+  height: 160px;
+  width: 160px;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  border-radius: 95px #4d5896;
+  box-shadow: 0 0 100px white;
+}
+
+
+.action__btns {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75px;
+  top: 83%;
+  width: 60%;
+  margin: 10px;
+  box-shadow: 0 0 100px white;
+}
+
+.action__btns button {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.4px;
+  border: 2px solid black;
+  outline: none;
+  height: 47px;
+  width: 30%;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 2px;
+}
+
+.resume,
+.portfolio {
+  color: #f3f6f4;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+button {
+  background: linear-gradient(white, #dd0a0a, #f3f6f4);
+  font-weight: bold;
+}
+/* The end of the homepage code*/
+
+/* The beginning of project code */
+.card-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+
+.proje-tittle {
+  position: relative;
+  left: 2%;
+  height: 300px;
+  width: 97%;
+}
+
+.proje-tittle h3 {
+  position: relative;
+  top: 50%;
+  left: 2%;
+  font-size: 40px;
+  color: white;
+  line-height: 1.4rem;
+  font-weight: bold;
+  text-decoration: 4px underline solid red;
+}
+
+.proje-tittle p {
+  position: relative;
+  top: 60%;
+  left: 2%;
+  font-size: 22px;
+  color: white;
+  font-weight: bold;
+}
+
+
+.first-box {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  width: 99%;
+  margin-left: 5px;
+  overflow: hidden;
+}
+
+.box1,
+.box2,
+.box3 {
+  position: relative;
+  left: 2%;
+  height: 57vh;
+  width: 45%;
+  overflow: hidden;
+  margin: 5px;
+  border-radius: 22px;
+  padding: 3px;
+  box-shadow: 6px 6px 16px #f1f1f1;
+}
+
+
+.box4 {
+  position: relative;
+  height: 57vh;
+  width: 45%;
+  overflow: hidden;
+  margin: 5px;
+  border-radius: 22px;
+  padding: 3px;
+  box-shadow: 6px 6px 16px #f1f1f1;
+  margin: 10px;
+}
+
+.box1-imge,
+.box2-imge,
+.box3-imge,
+.box4-imge {
+  overflow: hidden;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.5s;
+  box-shadow: 6px 6px 16px #f1f1f1;
+}
+
+
+.second-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 60vh;
+  width: 99%;
+  margin-left: 5px;
+}
+
+
+.box3 {
+  position: relative;
+  left: 2%;
+  height: 57vh;
+  width: 45%;
+}
+
+.box4 {
+  position: relative;
+  right: 5%;
+  height: 57vh;
+  width: 45%;
+  overflow: hidden;
+}
+
+.box1 .box1-imge:hover {
+  transform: scale(1.2);
+}
+
+.box2 .box2-imge:hover {
+  transform: scale(1.2);
+}
+
+.box3 .box3-imge:hover {
+  transform: scale(1.2);
+}
+
+.box4 .box4-imge:hover {
+  transform: scale(1.2);
+}
+/* The end of the project code*/
+
+
+/* This is the beginning of contact form code*/
+
+.form{
+  margin-top: 100px;
+  height: 590px;
+  width: 55%;
+   font-size: 18px;
+  color: white;
+}
+
+
+#form {
+  font-weight: bold;
+  font-size: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-decoration: underline red;
+}
+
+input {
+  height: 45px;
+  width: 50%;
+  font-size: 18px;
+}
+
+.form-tittle {
+  margin-bottom: 10px;
+}
+
+#sendEmailButton {
+  height: 50px;
+  width: 37%;
+  font-size: 22px;
+  background: linear-gradient(rgb(108, 250, 117), rgb(232, 59, 59));
+  color: rgb(10 25 47);
+  font-weight: bold;
+  border-radius: 15px;
+  box-shadow: 0 0 20px white;
+}
+#idMessage{
+  height: 50px;
+  width: 50%;
+  font-size: 18px;
+
+}
+
+fieldset {
+  border: rgb(10 25 47);
+}
+
+/* The end of the form code*/
+
+
+/*The beginning of aboutme code*/
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+}
+
+
+.about-box {
+  height: 90vh;
+  width: 97%;
+
+}
+
+.aboutme-tittle {
+  position: relative;
+  top: 20%;
+  left: 23%;
+  display: flex;
+  height: 400px;
+  width: 53%;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0 0 100px white;
+
+}
+
+.about-me {
+  font-size: 37px;
+  font-weight: bold;
+  color: white;
+  font-weight: bold;
+  text-decoration: underline red;
+  margin-top: 80px;
+}
+
+.about-tittle {
+  padding: 5px;
+}
+
+.about-name {
+  font-size: 23px;
+}
+/* The end of aboutme code*/
+
+/*skills code*/
+
+.skill-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+.skill-tittle {
+  display: flex;
+  margin-right: 20px;
+  height: 100px;
+  width: 40%;
+  margin-left: 10px;
+  color: white;
+  margin-top: 40px;
+  margin-bottom:10px;
+  margin-left: 40px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 550px;
+  width: 900px;
+  margin-left: 36px; 
+}
+
+
+.html {
+  height: 250px;
+  width: 250px;
+  margin-left: 15px;
+  box-shadow: 6px 6px 16px #fbf367;  
+}
+
+.css {
+  height: 250px;
+  width: 250px;
+  box-shadow: 6px 6px 16px #fbf367;
+}
+
+
+.js {
+  height: 250px;
+  width: 250px;
+  margin-right: 15px;
+  box-shadow: 0 0 16px #fbf367;
+}
+
+.html-image,
+.css-image,
+.js-image {
+  height: 250px;
+  width: 250px;
+  overflow: hidden;
+  transition: 0.5s;
+  box-shadow: 6px 6px 20px yellowgreen;
+}
+
+
+.skill-tittle .skill1 {
+  color: white;
+  font-size: 30px;
+  text-decoration: underline red; 
+}
+
+
+.skill-tittle .skill2 {
+  color: white;
+  font-size: 20px;
+  margin-top: 60px; 
+}
+
+
+.html .html-image:hover {
+  transform: scale(1, 2);
+}
+
+
+.css .css-image:hover {
+  transform: scale(1, 2);
+}
+
+
+.js .js-image:hover {
+  transform: scale(1, 2);
+}
+/* end of the skill code*/
+
+/*mobil screen*/
+@media (width < 750px) {
+  nav .checkbox {
+    display: block;
+  }
+
+  ul {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 85px);
+    left: -100%;
+    top: 85px;
+    background-color: black;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  nav #check:checked~ul {
+    left: 0;
+  }
+
+  ul li a {
+    font-size: 1.25rem;
+  }
+
+  .container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .image-box img {
+    position: absolute;
+    height: 160px;
+    width: 160px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imageh {
+    height: 160px;
+    width: 160px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content {
+    display: flex;
+    height: 325px;
+    width: 60%;
+
+  }
+
+  .content .subtitle {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .content .title {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .description {
+    display: inline;
+    height: 198px;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .action__btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 85%;
+    height: 65px;
+    width: 60%;
+
+  }
+
+  .action__btns button {
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    font-size: 18px;
+    height: 47px;
+    width: 40%;
+    margin: 5px;
+  }
+
+
+  .resume,
+  .portfolio {
+    display: inline;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+
+  }
+
+  .card-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .proje-tittle,
+  .proje-tittle h3,
+  .proje-tittle p {
+    justify-content: flex-start;
+  }
+
+  /*the box width and height are diffrent no of default*/
+  .first-box,
+  .second-box {
+    height: 60vh;
+    width: 99%;
+    margin-left: 5px;
+    overflow: hidden;
+
+  }
+
+  .box1,
+  .box2,
+  .box3,
+  .box4 {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+  .box1-imge,
+  .box2-imge,
+  .box3-imge,
+  .box4-imge {
+
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .proje-tittle h3 {
+    font-size: 20px;
+  }
+
+  .proje-tittle p {
+    font-size: 18px;
+  }
+
+/* This is the form part*/
+  .form {
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+  }
+
+  #button {
+    height: 50px;
+    width: 34%;
+  }
+/*This is about me*/
+  .about-box {
+    height: 90vh;
+    width: 97%;
+  }
+
+  .aboutme-tittle {
+    position: relative;
+    top: 5%;
+    left: 23%;
+    display: flex;
+    height: 720px;
+    width: 53%;
+    box-shadow: 0 0 100px white;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .about-me {
+    font-size: 34px;
+    font-weight: bold;
+    color: white;
+    font-weight: bold;
+    text-decoration: underline blue;
+    margin-top: 30px;
+  }
+
+/* This is the skills part*/
+/* for mobile screen*/
+
+
+  .skill-container {
+    display: flex;
+  
+   
+  }
+
+  /* the box width and height are 250px default*/
+
+.skill-tittle {
+  display: flex;
+  margin-right: 20px;
+  height: 100px;
+  width: 65%;
+  margin-left: 30px;
+  color: white;
+  margin-top: 40px;
+  margin-bottom:50px;
+
+}
+
+.skill {
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 110px;
+  width: 275px;
+  margin-right: 30px;
+}
+
+.html {
+  display: flex;
+  height: 90px;
+  width: 70px;
+  box-shadow: 6px 6px 16px #fbf367;
+  
+}
+
+.css {
+  display: flex;
+  height: 90px;
+  width: 70px;
+  box-shadow: 6px 6px 16px #fbf367;
+}
+
+.js {
+  display: flex;
+  height: 90px;
+  width: 70px;
+  margin-right: 15px;
+  box-shadow: 0 0 16px #fbf367;
+}
+
+/*the box width and height are 250px default*/
+
+.html-image,
+.css-image,
+.js-image {
+  height: 90px;
+  width: 90px;
+  overflow: hidden;
+  transition: 0.5s;
+  box-shadow: 6px 6px 20px yellowgreen;
+}
+
+.skill-tittle .skill1 {
+  color: white;
+  font-size: 12px;
+  text-decoration: underline red;
+  
+}
+
+
+.skill-tittle .skill2 {
+  color: white;
+  font-size: 10px;
+  margin-top: 60px;
+  
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
